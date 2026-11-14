@@ -18,12 +18,12 @@
 
 | 文件 | 大小 | sha256 |
 | --- | --- | --- |
-| `sm-37282000.exe` | 3,064,832 B（2.92 MB） | `372820006d927402dbafe29c7df4882bf7392647882f2c48dd949b4825a2146d` |
+| `sm-32ec1f37.exe` | 3,064,832 B（2.92 MB） | `32ec1f3789fb9164ac402621ba37237f5e27618964d42211df263fa8521e6062` |
 
 下载地址（Release `min-0.1.0`，id `445323103`）：
 
-- 直连：`https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-37282000.exe`
-- 镜像：`https://gh-proxy.com/https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-37282000.exe`
+- 直连：`https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-32ec1f37.exe`
+- 镜像：`https://gh-proxy.com/https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-32ec1f37.exe`
 
 > 本机实测：直连 25 s 内无响应（GitHub CDN 抖动），镜像 `200` 且长度 3,064,832 B 完全一致。国内建议直接给镜像地址。
 
@@ -37,6 +37,6 @@
 ## 校验示例
 
 ```powershell
-Get-FileHash .\sm-37282000.exe -Algorithm SHA256
-# 应为 372820006D927402DBAFE29C7DF4882BF7392647882F2C48DD949B4825A2146D
+Get-FileHash .\sm-32ec1f37.exe -Algorithm SHA256
+# 应为 32EC1F3789FB9164AC402621BA37237F5E27618964D42211DF263FA8521E6062
 ```
