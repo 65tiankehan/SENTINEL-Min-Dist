@@ -20,6 +20,13 @@
 | --- | --- | --- |
 | `sm-37282000.exe` | 3,064,832 B（2.92 MB） | `372820006d927402dbafe29c7df4882bf7392647882f2c48dd949b4825a2146d` |
 
+下载地址（Release `min-0.1.0`，id `445323103`）：
+
+- 直连：`https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-37282000.exe`
+- 镜像：`https://gh-proxy.com/https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-37282000.exe`
+
+> 本机实测：直连 25 s 内无响应（GitHub CDN 抖动），镜像 `200` 且长度 3,064,832 B 完全一致。国内建议直接给镜像地址。
+
 安装器行为：
 
 1. 双击运行，三页引导（装过一次会自动跳过）；
