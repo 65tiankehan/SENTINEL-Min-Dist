@@ -18,12 +18,12 @@
 
 | 文件 | 大小 | sha256 |
 | --- | --- | --- |
-| `sm-504d50ff.exe` | 3,064,832 B（2.92 MB） | `504d50ff499c7b6b02f76f905bdabf094a879c7ef30139200ea751218bbe6764` |
+| `sm-e18d4f9f.exe` | 3,064,832 B（2.92 MB） | `e18d4f9ffd15d85c1fab4af9cd4e553031d5d43309c7655cda2b7e6b9ffd40dd` |
 
 下载地址（Release `min-0.1.0`，id `445323103`）：
 
-- 直连：`https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-504d50ff.exe`
-- 镜像：`https://gh-proxy.com/https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-504d50ff.exe`
+- 直连：`https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-e18d4f9f.exe`
+- 镜像：`https://gh-proxy.com/https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-e18d4f9f.exe`
 
 > 本机实测：直连 25 s 内无响应（GitHub CDN 抖动），镜像 `200` 且长度 3,064,832 B 完全一致。国内建议直接给镜像地址。
 
@@ -37,6 +37,6 @@
 ## 校验示例
 
 ```powershell
-Get-FileHash .\sm-504d50ff.exe -Algorithm SHA256
-# 应为 504D50FF499C7B6B02F76F905BDABF094A879C7EF30139200EA751218BBE6764
+Get-FileHash .\sm-e18d4f9f.exe -Algorithm SHA256
+# 应为 E18D4F9FFD15D85C1FAB4AF9CD4E553031D5D43309C7655CDA2B7E6B9FFD40DD
 ```
