@@ -18,12 +18,12 @@
 
 | 文件 | 大小 | sha256 |
 | --- | --- | --- |
-| `sm-dcab27b9.exe` | 3,064,832 B（2.92 MB） | `dcab27b9de14a828aaba808000d049ed4a88197a470bb687007d72c78c5bdfa3` |
+| `sm-504d50ff.exe` | 3,064,832 B（2.92 MB） | `504d50ff499c7b6b02f76f905bdabf094a879c7ef30139200ea751218bbe6764` |
 
 下载地址（Release `min-0.1.0`，id `445323103`）：
 
-- 直连：`https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-dcab27b9.exe`
-- 镜像：`https://gh-proxy.com/https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-dcab27b9.exe`
+- 直连：`https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-504d50ff.exe`
+- 镜像：`https://gh-proxy.com/https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.0/sm-504d50ff.exe`
 
 > 本机实测：直连 25 s 内无响应（GitHub CDN 抖动），镜像 `200` 且长度 3,064,832 B 完全一致。国内建议直接给镜像地址。
 
@@ -37,6 +37,6 @@
 ## 校验示例
 
 ```powershell
-Get-FileHash .\sm-dcab27b9.exe -Algorithm SHA256
-# 应为 DCAB27B9DE14A828AABA808000D049ED4A88197A470BB687007D72C78C5BDFA3
+Get-FileHash .\sm-504d50ff.exe -Algorithm SHA256
+# 应为 504D50FF499C7B6B02F76F905BDABF094A879C7EF30139200EA751218BBE6764
 ```
