@@ -23,7 +23,7 @@
 | `sm-a6ea78ec.exe`（0.1.9） | 3,075,072 B（2.93 MB） | `a6ea78ec6cbc8acb1e29c2fdcb7628abf17b4c8f981080fea4bc473afc122208` |
 | `sm-e18d4f9f.exe`（0.1.0） | 3,065,856 B（2.92 MB） | `e18d4f9ffd15d85c1fab4af9cd4e553031d5d43309c7655cda2b7e6b9ffd40dd` |
 
-下载地址（Release `min-0.1.9`，需先在 GitHub 建 release 并上传 `sm-a6ea78ec.exe`）：
+下载地址（Release `min-0.1.9`，id `447061174`，已上传 `sm-a6ea78ec.exe`，2026-11-16 21:1x 发布）：
 
 - 直连：`https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.9/sm-a6ea78ec.exe`
 - 镜像：`https://gh-proxy.com/https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.9/sm-a6ea78ec.exe`
@@ -43,3 +43,10 @@
 Get-FileHash .\sm-a6ea78ec.exe -Algorithm SHA256
 # 应为 A6EA78EC6CBC8ACB1E29C2FDCB7628ABF17B4C8F981080FEA4BC473AFC122208
 ```
+
+## 已发布记录
+
+| 版本 | Release | id | 资产 | 复核 |
+| --- | --- | --- | --- | --- |
+| 0.1.9 | `min-0.1.9` | `447061174` | `sm-a6ea78ec.exe` 3,075,072 B | 直连 `200` + `content-length` 一致；镜像 `gh-proxy.com` 亦 `200` 同长度；GitHub 侧 `digest=sha256:a6ea78ec…122208` 与本机哈希一致 |
+| 0.1.0 | `min-0.1.0` | `445323103` | `sm-e18d4f9f.exe` 3,065,856 B | 直连曾 25 s 无响应（CDN 抖动），镜像 `200` 且长度一致 |
