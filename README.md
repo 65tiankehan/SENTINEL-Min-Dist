@@ -21,7 +21,7 @@
 | 文件 | 大小 | sha256 |
 | --- | --- | --- |
 | `sm-3e12fc5c.exe`（0.1.8） | 3,073,536 B（2.93 MB） | `3e12fc5ca3c249c47d29030371ec1e9dbe8057c3b827fbc920bec830cb13cd0b` |
-| `sm-e18d4f9f.exe`（0.1.0） | 3,064,832 B（2.92 MB） | `e18d4f9ffd15d85c1fab4af9cd4e553031d5d43309c7655cda2b7e6b9ffd40dd` |
+| `sm-e18d4f9f.exe`（0.1.0） | 3,065,856 B（2.92 MB） | `e18d4f9ffd15d85c1fab4af9cd4e553031d5d43309c7655cda2b7e6b9ffd40dd` |
 
 下载地址（Release `min-0.1.8`，需先在 GitHub 建 release 并上传 `sm-3e12fc5c.exe`）：
 
