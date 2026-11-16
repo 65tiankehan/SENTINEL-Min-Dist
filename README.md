@@ -12,21 +12,21 @@
 
 | 版本 | 状态 | 说明 |
 | --- | --- | --- |
-| 0.1.9 | **当前** | 修保镖生成在 4.1.6 上的解析（新增 `IBotGame`/`LocalGame` 路径）+ `auto-spawn` 失败重试 8 次 + 失败提示 8 秒 + 安装器 BigBrain 检测改递归（消除"装了却说没装"误报） | 玩家页新增「贵重物品」（比特币 / 显卡 / 劳力士 / LEDX，各 0~3 件）+ 医疗·贵重共用发放引擎；修 `_resolving` 未复位导致贵重一件发不出；顶栏居中三段式、面板默认右上角、页脚不再被压住 |
-| 0.1.8 | 已被 0.1.9 取代 | 玩家页新增贵重物品四样，但模板解析有 bug，实际发不出来 |
-| 0.1.0 | 首个可测版 | 三页签面板（保镖/玩家/维修）+ 保镖生成/集结/解散 + 六样医疗发放 + 原版维修附魔与耐久补满 + 安装器 |
+| 0.1.12 | **当前** | 修「生成保镖」最后一步卡住（`PreActive → Active`）：补 `WeaponManager.Selector.TakeMainWeapon()` 兜底、等待窗口 300→600 帧；资源加载时面板/提示显示进度百分比，不再报「请求被拒」 | 全部继承 0.1.9：贵重物品四样 + 发放引擎 + 顶栏/右上角/页脚修复 |
+| 0.1.9 | 已被 0.1.12 取代 | 修保镖生成在 4.1.6 上的解析（新增 `IBotGame`/`LocalGame` 路径）+ `auto-spawn` 失败重试 8 次 + 失败提示 8 秒 + 安装器 BigBrain 检测改递归（消除"装了却说没装"误报）；但生成最后一步仍可能卡在 `bot_not_active` | 玩家页新增「贵重物品」四样 + 医疗·贵重共用发放引擎；修 `_resolving` 未复位；顶栏居中、默认右上角、页脚不再被压住 |
+| 0.1.8 | 已被 0.1.12 取代 | 玩家页新增贵重物品四样，但模板解析有 bug，实际发不出来 |
 
 ## 资产
 
 | 文件 | 大小 | sha256 |
 | --- | --- | --- |
-| `sm-74530800.exe`（0.1.9） | 3,075,072 B（2.93 MB） | `7453080083891b3c0a8da246c3c5ef44e57e0fa3fb2928dcbaac61e00a4adfe5` |
+| `sm-ef3bcd9e.exe`（0.1.12） | 3,076,096 B（2.93 MB） | `ef3bcd9e7d861e4bbc49c51c209e7dfc190a4aab08a9394fda0c481ec82bbb7b` |
 | `sm-e18d4f9f.exe`（0.1.0） | 3,065,856 B（2.92 MB） | `e18d4f9ffd15d85c1fab4af9cd4e553031d5d43309c7655cda2b7e6b9ffd40dd` |
 
-下载地址（Release `min-0.1.9`，id `447061174`，已上传 `sm-74530800.exe`，2026-11-16 21:1x 发布）：
+下载地址（Release `min-0.1.12`，id `447154484`，已上传 `sm-ef3bcd9e.exe`，2026-11-16 22:31 发布）：
 
-- 直连：`https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.9/sm-74530800.exe`
-- 镜像：`https://gh-proxy.com/https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.9/sm-74530800.exe`
+- 直连：`https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.12/sm-ef3bcd9e.exe`
+- 镜像：`https://gh-proxy.com/https://github.com/65tiankehan/SENTINEL-Min-Dist/releases/download/min-0.1.12/sm-ef3bcd9e.exe`
 
 历史（Release `min-0.1.0`，id `445323103`）：`sm-e18d4f9f.exe`，直连 25 s 内无响应（GitHub CDN 抖动），镜像 `200` 且长度完全一致。国内建议直接给镜像地址。
 
@@ -40,7 +40,7 @@
 ## 校验示例
 
 ```powershell
-Get-FileHash .\sm-74530800.exe -Algorithm SHA256
+Get-FileHash .\sm-ef3bcd9e.exe -Algorithm SHA256
 # 应为 7453080083891B3C0A8DA246C3C5EF44E57E0FA3FB2928DCBAAC61E00A4ADFE5
 ```
 
@@ -48,5 +48,6 @@ Get-FileHash .\sm-74530800.exe -Algorithm SHA256
 
 | 版本 | Release | id | 资产 | 复核 |
 | --- | --- | --- | --- | --- |
-| 0.1.9 | `min-0.1.9` | `447061174` | `sm-74530800.exe` 3,075,072 B | GitHub 侧 `digest=sha256:74530800…4adfe5` 与本机哈希一致；镜像 `gh-proxy.com` `200` 且同长度（首次上传的 `sm-a6ea78ec.exe` 因安装器内版本号写死 0.1.0 已撤换） |
+| 0.1.12 | `min-0.1.12` | `447154484` | `sm-ef3bcd9e.exe` 3,076,096 B | GitHub 侧 `digest=sha256:ef3bcd9e…bb7b` 与本机哈希一致；镜像 `gh-proxy.com` `200` 且长度 3,076,096 |
+| 0.1.9 | `min-0.1.9` | `447061174` | `sm-74530800.exe` 3,075,072 B | 首次上传 `sm-a6ea78ec.exe` 因安装器版本号写死 0.1.0 已撤换为 `sm-74530800.exe` |
 | 0.1.0 | `min-0.1.0` | `445323103` | `sm-e18d4f9f.exe` 3,065,856 B | 直连曾 25 s 无响应（CDN 抖动），镜像 `200` 且长度一致 |
