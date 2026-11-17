@@ -1,6 +1,6 @@
 # SENTINEL MIN · Dist
 
-本仓库只放**发布产物**，不放源码。源码在 https://github.com/65tiankehan/SENTINEL-Min 。
+本仓库只放**发布产物**，不放源码。
 
 ## 命名约定
 
